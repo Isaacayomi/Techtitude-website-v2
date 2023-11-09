@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
-import Navbar from './components/Nav'
+import Navbar from './Components/Nav'
 import CardCarousels from './Components/CardCarousels'
 import TestimonialsCarousels from './Components/TestimonialsCarousel'
 import CoursesSection from './Components/Courses'
