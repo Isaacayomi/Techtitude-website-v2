@@ -1,0 +1,1723 @@
+@import url("https://fonts.cdnfonts.com/css/br-firma?styles=81213,81217,81207,81206");
+$purplebg: #805ca5;
+$grayedbg: #ccccff40;
+$goldyellow: #f0c20c;
+$lineargradient1: #4f92ce;
+$lineargradient2: #805ca5;
+$font: "BR Firma", sans-serif;
+$color: #1e2027;
+$inline-padding: 1.8rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $font;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $grayedbg;
+}
+
+a {
+  color: white;
+}
+
+//Navigation bar
+.ContainerNav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 1.3rem;
+  padding-inline: 1.4rem;
+  .Logo {
+    width: 43px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+//HERO SECTION
+.Hero {
+  background-color: white;
+  margin-top: -0.7rem;
+
+  padding-inline: 1.4rem;
+  padding-block: 1rem;
+  .HeroText {
+    h1 {
+      font-size: 2.6rem;
+      margin-top: 0.4rem;
+      margin-bottom: 1.4rem;
+      color: $purplebg;
+      font-weight: bolder;
+      line-height: 2.6rem;
+    }
+    p {
+      color: #1e2027;
+      margin-top: -0.5rem;
+      margin-bottom: 0.9rem;
+      font-weight: light;
+      font-size: 1.5rem;
+      line-height: 1.92rem;
+
+      .Bold {
+        font-weight: bolder;
+        color: black;
+      }
+    }
+  }
+
+  .HeroBtn {
+    background-image: linear-gradient(275deg, #805ca5 54.08%, #4f92ce 122.01%);
+    color: white;
+    outline: none;
+    // border: none;
+    border-radius: 0.32rem;
+    font-weight: 600;
+    margin-block: 0.1rem;
+    transition: 0.4s ease-in-out;
+    padding-block: 1rem;
+  }
+  button.HeroBtn {
+    margin-bottom: 1rem;
+    padding-block: 0.9rem;
+    padding-inline: 1rem;
+    background-color: $purplebg;
+    outline: none;
+    border: none;
+    transition: 0.4s ease-in-out;
+
+    a {
+      font-size: 1rem;
+    }
+  }
+  button.HeroBtn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      275deg,
+      #4f93ce58 122.01%,
+      #815ca566 54.08%
+    );
+  }
+}
+
+.HiddenImg {
+  display: none;
+}
+
+//Card (Vertical Carousels)
+.CardContainer {
+  padding-inline: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  padding-top: 1.7rem;
+  padding-bottom: 2.4rem;
+  margin-top: -1.2rem;
+  background-color: white;
+
+  .CardOne {
+    // background-color: white;
+    margin-top: -0.5rem;
+  }
+
+  .Card {
+    border: 2px solid #ccf;
+    border-radius: 1.2rem;
+    background-color: $grayedbg;
+    padding: 0.8rem;
+
+    .RoundedBg,
+    .RoundedBg2,
+    .RoundedBg3,
+    .RoundedBg4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 0.5rem;
+
+      .EllipseImg {
+        width: 4rem;
+      }
+
+      .EllipseImg2 {
+        width: 4.1rem;
+      }
+
+      .EllipseImg3 {
+        width: 4.3rem;
+      }
+
+      .EllipseImg4 {
+        width: 4.4rem;
+      }
+    }
+
+    .CardInternship,
+    .CardMentorship,
+    .CvIcon,
+    .ProjectIcon {
+      padding: 2rem;
+      position: absolute;
+      margin-inline: auto;
+      display: block;
+    }
+  }
+
+  .CardHeading {
+    font-size: 1.1rem;
+    color: #37014f;
+    text-align: center;
+    letter-spacing: 0.01rem;
+  }
+
+  .CardSummary {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-inline: auto;
+    line-height: 1.05rem;
+    color: #33333380;
+    font-weight: 400;
+  }
+}
+
+//TESTIMONIALS SECTION
+.TestimonialHeadings {
+  padding-inline: 1.4rem;
+  padding-block: 1rem;
+  // margin-top: 2.5rem;
+  background-color: $purplebg;
+  .FirstHeading {
+    color: $goldyellow;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: -0.3rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .SecondHeading {
+    color: white;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-inline: auto;
+    margin-top: 0.7rem;
+    margin-bottom: 0.95rem;
+  }
+}
+
+.Testimonial {
+  background-color: white;
+  padding-block: 1rem;
+  padding-inline: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  border-radius: 1.2rem;
+
+  p {
+    color: #333333;
+    font-size: 0.75rem;
+    line-height: 1.14rem;
+    word-spacing: 0.03rem;
+    letter-spacing: 0.015rem;
+  }
+
+  img {
+    width: 80px;
+    margin-bottom: 0.1rem;
+  }
+
+  .Witness {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    .ImgContainer {
+      background-color: $goldyellow;
+      height: 30px;
+      width: 30px;
+      border-radius: 0.2rem;
+    }
+  }
+
+  .Greetings {
+    margin-bottom: 0.7rem;
+  }
+
+  .MainText {
+    margin-bottom: 0.7rem;
+  }
+
+  .Name {
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .Stack {
+    color: #33333380;
+  }
+}
+
+//Courses Section
+.CoursesSection {
+  background-color: #ccccff40;
+  padding-block: 1.5rem;
+}
+.CoursesHeadings {
+  padding-top: 0;
+  width: 70%;
+  margin-inline: auto;
+
+  .HeadingOne {
+    color: $lineargradient1;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-block: 0.5rem;
+  }
+
+  .HeadingTwo {
+    color: $purplebg;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.8rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.CoursesCard {
+  border-radius: 1rem;
+  padding-inline: 1.2rem;
+  margin-inline: 1.4rem;
+  padding-block: 1.2rem;
+  background-color: $purplebg;
+  margin-bottom: 1.2rem;
+
+  .Heading {
+    color: $goldyellow;
+    font-weight: bolder;
+    letter-spacing: 0.06rem;
+    margin-block: 0.4rem;
+  }
+  p.Summary {
+    color: white;
+    line-height: 1.2rem;
+    font-weight: lighter;
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .HideOnMobile {
+    display: none;
+  }
+}
+
+.GroupedIcon {
+  width: 130px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.Ctas {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
+  button:nth-child(1) {
+    background-color: white;
+    color: $purplebg;
+    border-radius: 0.3rem;
+    border: none;
+    padding-inline: 0.9rem;
+    padding-block: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+  }
+
+  button:nth-child(2) {
+    border-radius: 0.3rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-block: 0.4rem;
+    padding-inline: 0.9rem;
+    transition: 0.4s ease-in-out;
+    font-size: 0.9rem;
+  }
+
+  button:nth-child(3) {
+    border-radius: 0.3rem;
+    border: none;
+    background-color: transparent;
+    color: $goldyellow;
+    padding-block: 0.4rem;
+    padding-inline: 0.9rem;
+    font-size: 0.9rem;
+    margin-bottom: -1rem;
+  }
+}
+
+button:nth-child(1):hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background-color: white;
+  color: $purplebg;
+}
+
+.InstructorsSection {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  .MainText {
+    text-align: justify;
+  }
+
+  .HeadingOne {
+    text-align: center;
+    color: $lineargradient1;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    margin-top: 1.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .HeadingTwo {
+    text-align: center;
+    color: $lineargradient2;
+    font-size: 1.7rem;
+    width: 70%;
+    margin-inline: auto;
+    line-height: 1.7rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .MainText {
+    word-spacing: 0.2rem;
+    letter-spacing: 0.04rem;
+    line-height: 1.4rem;
+    padding-inline: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-weight: lighter;
+  }
+}
+
+.WrapperMainText {
+  .SubText {
+    color: $purplebg;
+  }
+  .HeadingName {
+    font-weight: lighter;
+    line-height: 1.9rem;
+    color: $color;
+    font-size: 1.7rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .HeadingSubtext {
+    font-weight: lighter;
+    letter-spacing: 0.01rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+//Footer Section
+
+.FooterSection {
+  font-family: $font;
+  color: white;
+  background-color: $purplebg;
+  padding-inline: 1.4rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  .FooterLogo {
+    width: 65px;
+    height: auto;
+    img {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .FooterNav ul {
+    text-align: left;
+    margin-top: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 1.9rem;
+
+    li a {
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+
+  .ContactAddress {
+    font-size: 0.9rem;
+    padding-block: 1rem;
+    line-height: 1.25rem;
+    // font-weight: lighter;
+
+    p {
+      letter-spacing: 0.015rem;
+      font-weight: lighter;
+    }
+  }
+  p .Phone,
+  .Mail a {
+    color: white;
+  }
+
+  .Newsletter {
+    p:first-child {
+      color: white;
+      letter-spacing: 0.02rem;
+      font-size: 14px;
+    }
+
+    input {
+      position: relative;
+      padding-inline: 0.9rem;
+      padding-block: 0.85rem;
+      width: 95%;
+      border-radius: 0.4rem;
+      border: none;
+      outline: none;
+      margin-block: 0.5rem;
+    }
+
+    input:value {
+      padding-inline: 1rem;
+      padding-block: 0.4rem;
+      border-radius: 0.4rem;
+      color: white;
+      outline: none;
+    }
+  }
+}
+
+.SubscribeBtn {
+  position: absolute;
+  right: 14%;
+  background-image: linear-gradient(275deg, #805ca5 54.08%, #4f92ce 122.01%);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.32rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.9rem;
+  padding-block: 0.4rem;
+  padding-inline: 0.6rem;
+  transition: 0.4s ease-in-out;
+}
+
+.SubscribeBtn:hover {
+  background-image: linear-gradient(
+    275deg,
+    #4f93ce58 122.01%,
+    #815ca566 54.08%
+  );
+}
+
+.Socials {
+  width: 120px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Copyright {
+  margin-top: 2rem;
+  p {
+    text-align: center;
+    font-weight: normal;
+    font-family: $font;
+    font-size: 0.85rem;
+    border-top: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 650px) {
+  .Hero {
+    .HeroText {
+      h1 {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+      }
+
+      p {
+        width: 80%;
+        line-height: 1.8rem;
+        padding-block: 0.1rem;
+      }
+
+      .HeroBtn {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .CardContainer {
+    .CardSummary {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      padding-bottom: 0.28rem;
+      margin-inline: auto;
+    }
+  }
+
+  //TESTIMONIAL SECTION
+  .TestimonialHeadings {
+    .FirstHeading {
+      font-size: 1rem;
+      letter-spacing: 0.09rem;
+    }
+
+    .SecondHeading {
+      font-size: 1.9rem;
+      width: 90%;
+      line-height: 2rem;
+      margin-inline: auto;
+      padding-bottom: 0.7rem;
+    }
+  }
+
+  .MainTestimonial {
+    p.Greetings,
+    p.MainText {
+      // text-align: justify;
+      font-size: 0.8rem;
+      letter-spacing: 0.01;
+      word-spacing: 0.2rem;
+    }
+
+    p.MainText {
+      margin-top: -0.1rem;
+      word-spacing: 0;
+      letter-spacing: 0.04rem;
+    }
+
+    .Testimonial {
+      .Greetings {
+        font-size: 1rem;
+      }
+
+      .MainText {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: lighter;
+      }
+      width: 95%;
+      margin-inline: auto;
+      img {
+        width: 70px;
+      }
+    }
+
+    .Ctas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+
+      button:nth-child(1),
+      button:nth-child(2),
+      button:nth-child(3) {
+        height: 2.8rem;
+        font-size: 0.75rem;
+        padding-inline: 1rem;
+      }
+    }
+
+    .CoursesCard {
+      width: 90%;
+      margin-inline: auto;
+    }
+
+    .Wrapper {
+      width: 80%;
+      .ImgWrapper {
+        // width: 80%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .CoursesHeadings {
+    width: 100%;
+    .HeadingOne {
+      font-size: 1.5rem;
+    }
+    // border: 2px solid red;
+    .HeadingTwo {
+      width: 70%;
+      margin-inline: auto;
+      margin-top: -0.1rem;
+      font-size: 2.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  .GroupedIcon {
+    width: 10.6rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .CoursesCard {
+    // padding-inline: 1.3rem;
+    .Heading {
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 0rem;
+      margin-top: 0.2rem;
+      margin-bottom: -0.5rem;
+    }
+
+    p.Summary {
+      font-size: 0.9rem;
+      font-weight: lighter;
+      line-height: 1.2rem;
+      letter-spacing: 0.01rem;
+    }
+  }
+
+  .Ctas {
+    flex-direction: row;
+    gap: 1rem;
+    button:nth-child(1) {
+      padding-inline: 0;
+      padding-block: 0.6rem;
+      font-size: 0.75rem;
+      width: 15rem;
+    }
+
+    button:nth-child(2) {
+      width: 18rem;
+      font-size: 0.8rem;
+      padding-block: 0.55rem;
+      padding-inline: 0;
+      margin-right: -1.3rem;
+      font-weight: bolder;
+    }
+
+    button:nth-child(3) {
+      width: 10rem;
+      font-size: 0.8rem;
+      margin-left: 0.8rem;
+      padding-block: 0.6rem;
+      padding-inline: 0;
+    }
+  }
+
+  .SubscribeBtn {
+    right: 11%;
+  }
+}
+//Removes the nav list on screen widths of 650px below
+@media screen and (max-width: 650px) {
+  .ContainerNav {
+    .NavItems {
+      display: none;
+    }
+  }
+}
+//End
+
+@media screen and (min-width: 651px) and (max-width: 760px) {
+  .ContainerNav {
+    padding-inline: $inline-padding;
+    //Removes the nav list on screen widths of 651px below
+    .NavItems {
+      display: none;
+    }
+  }
+  .Hero {
+    padding-inline: $inline-padding;
+
+    .HeroText {
+      h1 {
+        width: 80%;
+        font-size: 3.3rem;
+        line-height: 3.4rem;
+        // width: 80%;
+      }
+
+      p {
+        font-size: 1.65rem;
+        width: 85%;
+      }
+
+      .HeroBtn {
+        padding-inline: 1.9rem;
+        padding-block: 0.95rem;
+      }
+    }
+  }
+
+  .CardContainer {
+    padding-inline: $inline-padding;
+    .CardHeading {
+      font-size: 1.3rem;
+    }
+    .CardSummary {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      width: 100%;
+    }
+  }
+
+  //TESTIMONIAL SECTION
+  .TestimonialHeadings {
+    padding-inline: $inline-padding;
+    .FirstHeading {
+      font-size: 1.3rem;
+    }
+
+    .SecondHeading {
+      font-size: 1.9rem;
+      width: 65%;
+      margin-inline: auto;
+      line-height: 1.8rem;
+    }
+  }
+
+  .MainTestimonial {
+    p.MainText {
+      margin-top: -0.3rem;
+      margin-bottom: 0.45rem;
+    }
+  }
+
+  .Ctas {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.6rem;
+
+    button {
+      width: 100%;
+    }
+
+    button:nth-child(1) {
+      padding-block: 0.5rem;
+    }
+
+    button:nth-child(3) {
+      margin-top: -1rem;
+      // border: 1px solid red; solid black;
+
+      margin-left: 0;
+      padding-inline: 0;
+      width: 22rem;
+    }
+  }
+
+  .CoursesSection {
+    padding-inline: 0.5rem;
+    .CoursesHeadings {
+      .HeadingOne {
+        font-size: 1.5rem;
+      }
+      .HeadingTwo {
+        font-size: 2.2rem;
+        width: 70%;
+        margin-inline: auto;
+        line-height: 2rem;
+        margin-top: -0.2rem;
+      }
+    }
+    p.Summary {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      font-weight: lighter;
+      margin-top: -0.1rem;
+    }
+  }
+
+  .GroupedIcon {
+    width: 160px;
+    margin-bottom: -0.3rem;
+  }
+
+  p.Heading {
+    font-size: 1.4rem;
+  }
+  .Ctas {
+    gap: 0.8rem;
+
+    button:nth-child(1),
+    button:nth-child(2) {
+      padding-block: 0.5rem;
+      padding-inline: 0.3rem;
+      font-size: 0.95rem;
+    }
+    button:nth-child(3) {
+      margin-left: -1.3rem;
+    }
+  }
+
+  .InstructorsSection {
+    padding-inline: 0.7rem;
+  }
+
+  //FOOTER SECTION
+  .FooterSection {
+    padding-inline: $inline-padding;
+    .FooterNav {
+      ul {
+        gap: 1rem;
+        display: flex;
+        gap: 0;
+        li a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .ContactAddress {
+      line-height: 1.3rem;
+      p.Address {
+        width: 100%;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    .Newsletter {
+      p:first-child {
+        font-size: 0.95rem;
+      }
+
+      input {
+        width: 50%;
+        padding-block: 1rem;
+      }
+    }
+
+    .Socials {
+      width: 170px;
+    }
+  }
+
+  .SubscribeBtn {
+    padding-block: 0.6rem;
+    right: 50%;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .NavIcon {
+    display: none;
+    border: 1px solid black;
+  }
+
+  .NavItems {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 1.4rem;
+
+      li {
+        color: #333;
+        font-weight: normal;
+        font-size: 0.8rem;
+      }
+      li:hover {
+        cursor: pointer;
+        background-color: linear-gradient(
+          275deg,
+          #805ca5 54.08%,
+          #4f92ce 122.01%
+        );
+      }
+
+      li:nth-child(4) {
+        color: white;
+        font-size: 0.85rem;
+        border-radius: 0.3rem;
+        padding-inline: 0.9rem;
+        padding-block: 0.7rem;
+        align-items: center;
+        // padding: 0.8rem 1.02rem 0.7rem 1.4rem;
+        background-image: linear-gradient(
+          275deg,
+          #805ca5 54.08%,
+          #4f92ce 122.01%
+        );
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 955px) {
+  // .ContainerNav {
+
+  // }
+  .ContainerNav {
+    padding-inline: 1.9rem;
+
+    .logo {
+      width: 50px;
+      border: 1px solid black;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    .HeroText {
+      width: 60%;
+      h1 {
+        font-size: 3.1rem;
+        line-height: 3.1rem;
+      }
+
+      .HeroBtn {
+        padding-inline: 1.3rem;
+        padding-block: 0.8rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .HeroImg {
+      width: 400px;
+      margin-top: -2.5rem;
+      .HiddenImg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .CardContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "a b"
+      "c d";
+
+    .CardOne {
+      grid-area: a;
+    }
+    .CardTwo {
+      grid-area: b;
+    }
+  }
+  .CardThree {
+    grid-area: c;
+  }
+
+  .CardFour {
+    grid-area: d;
+  }
+
+  //TESTIMONIALS SECTION
+  .TestimonialHeadings {
+    .FirstHeading {
+      font-size: 1.4rem;
+    }
+
+    .SecondHeading {
+      font-size: 1.9rem;
+      width: 55%;
+      line-height: 2rem;
+    }
+  }
+
+  //COURSES SECTION
+  .CoursesHeadings {
+    .HeadingOne {
+      font-size: 1.5rem;
+    }
+
+    .HeadingTwo {
+      font-size: 1.95rem;
+      width: 60%;
+      margin-inline: auto;
+    }
+  }
+
+  .Ctas {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+
+    button:nth-child(1) {
+      width: 20%;
+      padding-block: 0.5rem;
+      padding-inline: 0.01rem;
+    }
+    button:nth-child(2) {
+      width: 25%;
+      margin-right: 17rem;
+      margin-left: 0.3rem;
+    }
+
+    button:nth-child(3) {
+      margin-top: -1rem;
+    }
+  }
+
+  .FooterSection {
+    .Footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // justify-content: center;
+      // gap: 4rem;
+      gap: 1rem;
+    }
+    padding-inline: $inline-padding;
+    .FooterNav {
+      ul {
+        justify-content: flex-start;
+        gap: 2.9rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .ContactAddress {
+        p {
+          text-align: justify;
+        }
+      }
+    }
+
+    .Newsletter {
+      input {
+        width: 100%;
+      }
+
+      input::placeholder {
+        // border: 2px solid black;
+        font-size: 0.7rem;
+      }
+    }
+
+    button.SubscribeBtn {
+      // right: 56%;
+      right: 5%;
+      font-size: 0.6rem;
+      margin-top: 1.1rem;
+      font-weight: lighter;
+      letter-spacing: 0.01rem;
+    }
+  }
+}
+
+@media screen and (min-width: 956px) and (max-width: 1199px) {
+  body {
+    background-color: white;
+  }
+  .ContainerNav {
+    padding-inline: 3.8rem;
+  }
+  .Hero {
+    margin-inline: 3.8rem;
+    margin-top: 2.3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0;
+    background-color: $grayedbg;
+    border-radius: 0.8rem;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+    .HeroText {
+      width: 50%;
+      h1 {
+        font-size: 3.65rem;
+        line-height: 3.35rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+
+      .HeroBtn {
+        padding-inline: 1.3rem;
+        padding-block: 0.8rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .HeroImg {
+      width: 700px;
+      margin-top: -4rem;
+      margin-right: -5rem;
+      .HiddenImg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-inline: 3.8rem;
+
+    .Card {
+      .RoundedBg,
+      .RoundedBg2,
+      .RoundedBg3,
+      .RoundedBg4 {
+        padding-block: 0.3rem;
+
+        .EllipseImg {
+          width: 3.4rem;
+        }
+        .EllipseImg2 {
+          width: 3.5rem;
+        }
+        .EllipseImg3 {
+          width: 3.5rem;
+        }
+        .EllipseImg4 {
+          width: 3.3rem;
+        }
+      }
+
+      .CardInternship,
+      .CardMentorship,
+      .CvIcon,
+      .ProjectIcon {
+        padding: 1rem;
+        position: absolute;
+        margin-inline: auto;
+        display: block;
+        width: 65px;
+      }
+    }
+
+    .CardHeading {
+      font-size: 0.9rem;
+    }
+
+    .CardSummary {
+      font-size: 0.7rem;
+    }
+  }
+
+  //TESTIMONIALS SECTION
+  .TestimonialHeadings {
+    .FirstHeading {
+      font-size: 1.2rem;
+    }
+
+    .SecondHeading {
+      font-size: 1.7rem;
+      width: 60%;
+      line-height: 2rem;
+    }
+  }
+
+  .Testimonial {
+    margin-inline: 3.8rem;
+  }
+
+  //COURSES SECTION
+  .HeadingOne {
+    font-size: 1.6rem;
+  }
+  .HeadingTwo {
+    font-size: 2rem;
+    margin-block: -0.25rem;
+    // margin-top: 0.9rem;
+  }
+
+  //COURSES SECTION
+  .CoursesCard {
+    margin-inline: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-block: 0.1rem;
+
+    .HiddenImage {
+      display: none;
+    }
+
+    .HideOnMobile {
+      display: block;
+    }
+
+    .Ctas {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+
+      button:nth-child(1) {
+        width: 20%;
+        padding-block: 0.5rem;
+        padding-inline: 0.01rem;
+      }
+      button:nth-child(2) {
+        width: 30%;
+        margin-right: 17rem;
+        margin-left: 0.3rem;
+      }
+
+      button:nth-child(3) {
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  //INSTRUCTOR SECTION
+  .InstructorsSection {
+    margin-inline: 3.8rem;
+
+    .HeadingOne {
+      font-size: 1.3rem;
+    }
+
+    .HeadingTwo {
+      font-size: 2rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  //FOOTER SECTION
+
+  .FooterSection {
+    justify-content: space-evenly;
+    .FooterNav {
+      margin-left: -3rem;
+      ul {
+        gap: 1.5rem;
+        justify-content: flex-start;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .Newsletter {
+      p:first-child {
+        margin-left: -0.4rem;
+      }
+      margin-right: 8rem;
+      width: 100%;
+      input {
+        width: 100%;
+        margin-left: -0.6rem;
+        margin-block: 0.7rem;
+      }
+    }
+
+    .Newsletter {
+      display: flex;
+      flex-direction: column;
+      padding-inline: 0.5rem;
+    }
+  }
+
+  .Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.3rem;
+  }
+
+  button.SubscribeBtn {
+    right: 7%;
+    padding-block: 0.5rem;
+    font-size: 0.5rem;
+    margin-top: 1.01rem;
+    margin-right: 0.45rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+  }
+
+  .ContactAddress {
+    p {
+      line-height: 1.3rem;
+      font-weight: lighter;
+    }
+  }
+
+  .Socials {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: white;
+  }
+  .ContainerNav {
+    padding-inline: 3.8rem;
+  }
+  .Hero {
+    margin-inline: 3.8rem;
+    margin-top: 2.3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 0;
+    background-color: $grayedbg;
+    border-radius: 0.8rem;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+    .HeroText {
+      width: 50%;
+      h1 {
+        width: 90%;
+        font-size: 3.8rem;
+        line-height: 3.5rem;
+      }
+      p {
+        width: 100%;
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+      }
+
+      .HeroBtn {
+        padding-inline: 1.3rem;
+        padding-block: 0.8rem;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .HeroImg {
+      width: 650px;
+      margin-top: -4rem;
+      margin-right: -5rem;
+      .HiddenImg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-inline: 3.8rem;
+
+    .Card {
+      .RoundedBg,
+      .RoundedBg2,
+      .RoundedBg3,
+      .RoundedBg4 {
+        padding-block: 0.3rem;
+
+        .EllipseImg {
+          width: 3.4rem;
+        }
+        .EllipseImg2 {
+          width: 3.5rem;
+        }
+        .EllipseImg3 {
+          width: 3.5rem;
+        }
+        .EllipseImg4 {
+          width: 3.3rem;
+        }
+      }
+
+      .CardInternship,
+      .CardMentorship,
+      .CvIcon,
+      .ProjectIcon {
+        padding: 1rem;
+        position: absolute;
+        margin-inline: auto;
+        display: block;
+        width: 65px;
+      }
+    }
+
+    .CardHeading {
+      font-size: 0.9rem;
+    }
+
+    .CardSummary {
+      font-size: 0.7rem;
+    }
+  }
+
+  //TESTIMONIALS SECTION
+  .TestimonialHeadings {
+    .FirstHeading {
+      font-size: 1.2rem;
+    }
+
+    .SecondHeading {
+      font-size: 1.7rem;
+      width: 60%;
+      line-height: 2rem;
+    }
+  }
+
+  .Testimonial {
+    margin-inline: 3.8rem;
+  }
+
+  .TestimonialHeadings {
+    .SecondHeading {
+      width: 50%;
+    }
+  }
+
+  //COURSES SECTION
+  .HeadingOne {
+    font-size: 1.6rem;
+  }
+  .HeadingTwo {
+    font-size: 2rem;
+    margin-block: -0.25rem;
+    // margin-top: 0.9rem;
+  }
+
+  //COURSES SECTION
+  .CoursesCard {
+    margin-inline: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-block: 0.3rem;
+    padding-inline: 2.5rem;
+
+    .HiddenImage {
+      display: none;
+    }
+
+    .HideOnMobile {
+      display: block;
+    }
+
+    .Ctas {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+
+      button:nth-child(1) {
+        width: 20%;
+        padding-block: 0.5rem;
+        padding-inline: 0.01rem;
+      }
+      button:nth-child(2) {
+        width: 22%;
+        margin-right: 22rem;
+        // margin-left: 0.1rem;
+      }
+
+      button:nth-child(3) {
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  //INSTRUCTOR SECTION
+  .InstructorsSection {
+    margin-inline: 3.8rem;
+
+    .HeadingOne {
+      font-size: 1.3rem;
+    }
+
+    .HeadingTwo {
+      font-size: 2rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  //FOOTER SECTION
+
+  .FooterSection {
+    justify-content: space-evenly;
+    .FooterNav {
+      margin-left: -3rem;
+      ul {
+        gap: 1.5rem;
+        justify-content: flex-start;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .Newsletter {
+      p:first-child {
+        margin-left: -0.4rem;
+      }
+      margin-right: 8rem;
+      width: 100%;
+      input {
+        width: 100%;
+        margin-left: -0.6rem;
+        margin-block: 0.7rem;
+      }
+    }
+
+    .Newsletter {
+      display: flex;
+      flex-direction: column;
+      padding-inline: 0.5rem;
+    }
+  }
+
+  .Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // gap: 1.3rem;
+  }
+
+  .FooterSection {
+    .FooterLogo {
+      width: 100px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  button.SubscribeBtn {
+    right: 10%;
+    font-size: 0.85rem;
+    padding-block: 0.4rem;
+    padding-inline: 0.6rem;
+    margin-top: 1.1rem;
+    font-weight: lighter;
+  }
+
+  .ContactAddress {
+    p {
+      line-height: 1.3rem;
+      font-weight: lighter;
+    }
+  }
+
+  .Socials {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .Copyright {
+    p {
+      margin-inline: 3.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .Hero {
+    .HeroText {
+      width: 55%;
+
+      h1 {
+        font-size: 4.5rem;
+        line-height: 4.6rem;
+      }
+
+      p {
+        font-size: 2.1rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+  .CoursesCard {
+    .Ctas {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+
+      button:nth-child(1) {
+        width: 20%;
+        padding-block: 0.5rem;
+        padding-inline: 0.01rem;
+      }
+      button:nth-child(2) {
+        width: 22%;
+        margin-right: 25rem;
+      }
+
+      button:nth-child(3) {
+        margin-top: -1rem;
+      }
+    }
+  }
+}
+
+//Jinadu's code
+.NaHam {
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
