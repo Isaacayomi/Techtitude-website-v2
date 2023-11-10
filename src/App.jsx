@@ -6,7 +6,7 @@ import TestimonialsCarousels from './Components/TestimonialsCarousel'
 import CoursesSection from './Components/Courses'
 import InstructorsSection from './Components/InstructorsSection'
 import Footer from './Components/Footer'
-import { HERO_IMAGE } from './assets/images/img'
+import { HERO_IMAGE } from './assets/images/img';
 
 const HeroSection = () => {
 
@@ -22,8 +22,7 @@ const HeroSection = () => {
 
       <div className='HeroImg'>
 
-        <img src={HERO_IMAGE} alt='hero-img' className='HiddenImg' />
-        {/* <img src={HERO_IMG} alt='hero-img' className='HiddenImage' /> */}
+        <img src={HERO_IMAGE} alt='hero-img' className='HiddenImg' />        {/* <img src={HERO_IMG} alt='hero-img' className='HiddenImage' /> */}
         {/* <img src={HER0_IMG} alt='hero-img' className='HiddenImg' /> */}
       </div>
     </div>
