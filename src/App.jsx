@@ -6,7 +6,7 @@ import TestimonialsCarousels from './Components/TestimonialsCarousel'
 import CoursesSection from './Components/Courses'
 import InstructorsSection from './Components/InstructorsSection'
 import Footer from './Components/Footer'
-import { HERO_IMAGE } from '../assets/images/img';
+import { HERO_IMAGE } from './assets/images/img';
 
 const HeroSection = () => {
 
