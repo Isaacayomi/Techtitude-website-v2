@@ -792,14 +792,13 @@ button:nth-child(2):hover {
   .NavItems.open {
     position: absolute;
     z-index: 999;
-    top: 20%;
+    top: 7%;
     left: 0;
     height: 100vh;
     background-color: #ccccff;
     display: block;
     width: 100%;
     text-align: right;
-    // padding-inline: 0;
   }
 
   .NavIcon {
