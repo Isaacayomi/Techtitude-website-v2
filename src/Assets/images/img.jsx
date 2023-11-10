@@ -2,7 +2,8 @@ export { default as CV_ICON } from './cv-icon.png';
 export { default as CYBER_SECURITY } from './cyber-security-icon.png';
 export { default as DATA_ANALYTICS } from './data-analytics-icon.png';
 export { default as FOOTER_LOGO } from './footer-logo.png';
-export { default as HER0_IMG } from './hero-img.png';
+export { default as HERO_IMAGE } from './hero-img.png'
+// export { default as HER0_IMG } from './hero-img.png';
 export { default as INSTRUCTOR_IMG } from './instructor-frame.png';
 export { default as INTERNSHIP_ICON } from './internship-icon.png';
 export { default as MENTORSHIP_ICON } from './mentorship-icon.png';
