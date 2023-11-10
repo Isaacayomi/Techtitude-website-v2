@@ -814,7 +814,7 @@ button:nth-child(2):hover {
     //Removes the nav list on screen widths of 651px below
     //toggle nav bar
     .NavItems {
-      display: block;
+      display: none;
       position: absolute;
       z-index: 10;
       top: 20%;
