@@ -6,7 +6,10 @@ import TestimonialsCarousels from './Components/TestimonialsCarousel'
 import CoursesSection from './Components/Courses'
 import InstructorsSection from './Components/InstructorsSection'
 import Footer from './Components/Footer'
-import { HERO_IMAGE } from './assets/images/img';
+//Updated
+import HeroImage from './assets/images/hero-img.png'
+//...
+// import { HERO_IMAGE } from './assets/images/img';
 
 const HeroSection = () => {
 
@@ -22,7 +25,7 @@ const HeroSection = () => {
 
       <div className='HeroImg'>
 
-        <img src={HERO_IMAGE} alt='hero-img' className='HiddenImg' />
+        <img src={HeroImage} alt='hero-img' className='HiddenImg' />
       </div>
     </div>
   )
