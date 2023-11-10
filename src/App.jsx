@@ -22,7 +22,6 @@ const HeroSection = () => {
           <a href='#regform'> SIGN UP NOW</a>
         </button>
       </div>
-
       <div className='HeroImg'>
 
         <img src={HeroImage} alt='hero-img' className='HiddenImg' />
