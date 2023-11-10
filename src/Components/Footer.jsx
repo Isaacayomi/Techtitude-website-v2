@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className='NewsletterSection'>
                     <div className='Newsletter'>
                         <p>Like to receive our Newsletter?</p>
-                        <div>
+                        <div className="EmailSection">
                             <input type='email' placeholder='Enter Your Email' className="EmailField" />
                             <button className='SubscribeBtn'>Subscribe</button>
                         </div>

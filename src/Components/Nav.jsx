@@ -12,7 +12,6 @@ const Navbar = () => {
 
     const ToggleMenu = () => {
         setOpen(!open);
-        document.querySelector('.NavItems').classList.toggle('open');
     };
 
     const handleLinkClick = (url) => {

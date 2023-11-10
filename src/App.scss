@@ -501,30 +501,26 @@ button:nth-child(2):hover {
       font-size: 14px;
     }
 
-    input {
+    .EmailSection {
       position: relative;
-      padding-inline: 0.9rem;
-      padding-block: 0.85rem;
-      width: 95%;
-      border-radius: 0.4rem;
-      border: none;
-      outline: none;
-      margin-block: 0.5rem;
-    }
 
-    input:value {
-      padding-inline: 1rem;
-      padding-block: 0.4rem;
-      border-radius: 0.4rem;
-      color: white;
-      outline: none;
+      input {
+        padding-inline: 0.9rem;
+        padding-block: 0.85rem;
+        width: 100%;
+        border-radius: 0.4rem;
+        border: none;
+        outline: none;
+        margin-block: 0.5rem;
+      }
     }
   }
 }
 
 .SubscribeBtn {
+  margin-right: 0.35rem;
   position: absolute;
-  right: 14%;
+  right: 0;
   background-image: linear-gradient(275deg, #805ca5 54.08%, #4f92ce 122.01%);
   color: white;
   outline: none;
@@ -745,10 +741,6 @@ button:nth-child(2):hover {
       padding-inline: 0;
     }
   }
-
-  .SubscribeBtn {
-    right: 11%;
-  }
 }
 //Removes the nav list on screen widths of 650px below
 @media screen and (max-width: 650px) {
@@ -791,7 +783,7 @@ button:nth-child(2):hover {
 
   .NavItems.open {
     position: absolute;
-    z-index: 999;
+    z-index: 10;
     top: 20%;
     left: 0;
     height: 100vh;
@@ -822,8 +814,11 @@ button:nth-child(2):hover {
     //Removes the nav list on screen widths of 651px below
     //toggle nav bar
     .NavItems {
-      display: none;
-
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 20%;
+      left: 0;
       ul {
         display: flex;
         flex-direction: column;
@@ -1041,9 +1036,13 @@ button:nth-child(2):hover {
         font-size: 0.95rem;
       }
 
-      input {
-        width: 50%;
-        padding-block: 1rem;
+      .EmailSection {
+        width: 90%;
+        // padding-block: 1rem;
+      }
+
+      .SubscribeBtn {
+        right: 0;
       }
     }
 
@@ -1051,59 +1050,7 @@ button:nth-child(2):hover {
       width: 170px;
     }
   }
-
-  .SubscribeBtn {
-    padding-block: 0.6rem;
-    right: 50%;
-    margin-right: 0.5rem;
-  }
 }
-
-// @media screen and (min-width: 768px) {
-//   .NavIcon {
-//     display: none;
-//     border: 1px solid black;
-//   }
-
-//   .NavItems {
-//     ul {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       gap: 30px;
-//       padding-bottom: 1.4rem;
-
-//       li {
-//         color: #333;
-//         font-weight: normal;
-//         font-size: 0.8rem;
-//       }
-//       li:hover {
-//         cursor: pointer;
-//         background-color: linear-gradient(
-//           275deg,
-//           #805ca5 54.08%,
-//           #4f92ce 122.01%
-//         );
-//       }
-
-//       li:nth-child(4) {
-//         color: white;
-//         font-size: 0.85rem;
-//         border-radius: 0.3rem;
-//         padding-inline: 0.9rem;
-//         padding-block: 0.7rem;
-//         align-items: center;
-//         // padding: 0.8rem 1.02rem 0.7rem 1.4rem;
-//         background-image: linear-gradient(
-//           275deg,
-//           #805ca5 54.08%,
-//           #4f92ce 122.01%
-//         );
-//       }
-//     }
-//   }
-// }
 
 @media screen and (min-width: 761px) and (max-width: 955px) {
   // .ContainerNav {
@@ -1302,13 +1249,12 @@ button:nth-child(2):hover {
       }
     }
 
-    button.SubscribeBtn {
-      // right: 56%;
-      right: 5%;
-      font-size: 0.6rem;
-      margin-top: 1.1rem;
-      font-weight: lighter;
-      letter-spacing: 0.01rem;
+    .EmailSection {
+      position: relative;
+      .SubscribeBtn {
+        position: absolute;
+        right: 0;
+      }
     }
   }
 }
@@ -1323,7 +1269,6 @@ button:nth-child(2):hover {
       display: none;
     }
     .NavItems {
-      // display: none;
       ul {
         display: flex;
         justify-content: center;
@@ -1556,11 +1501,11 @@ button:nth-child(2):hover {
       }
       margin-right: 8rem;
       width: 100%;
-      input {
-        width: 100%;
-        margin-left: -0.6rem;
-        margin-block: 0.7rem;
-      }
+      // input {
+      //   width: 100%;
+      //   margin-left: -0.6rem;
+      //   margin-block: 0.7rem;
+      // }
     }
 
     .Newsletter {
@@ -1577,15 +1522,15 @@ button:nth-child(2):hover {
     gap: 1.3rem;
   }
 
-  button.SubscribeBtn {
-    right: 7%;
-    padding-block: 0.5rem;
-    font-size: 0.5rem;
-    margin-top: 1.19rem;
-    margin-right: 0.45rem;
-    font-weight: lighter;
-    letter-spacing: 0.1rem;
-  }
+  // button.SubscribeBtn {
+  //   right: 7%;
+  //   padding-block: 0.5rem;
+  //   font-size: 0.5rem;
+  //   margin-top: 1.19rem;
+  //   margin-right: 0.45rem;
+  //   font-weight: lighter;
+  //   letter-spacing: 0.1rem;
+  // }
 
   .ContactAddress {
     p {
@@ -1599,24 +1544,6 @@ button:nth-child(2):hover {
     img {
       width: 100%;
     }
-  }
-}
-
-@media screen and (min-width: 1064px) {
-  button.SubscribeBtn {
-    margin-right: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 1128px) {
-  button.SubscribeBtn {
-    margin-right: 1.25rem;
-  }
-}
-
-@media screen and (min-width: 1168px) {
-  button.SubscribeBtn {
-    margin-right: 1.4rem;
   }
 }
 
@@ -1874,11 +1801,11 @@ button:nth-child(2):hover {
       }
       margin-right: 8rem;
       width: 100%;
-      input {
-        width: 100%;
-        margin-left: -0.6rem;
-        margin-block: 0.7rem;
-      }
+      // input {
+      //   width: 100%;
+      //   margin-left: -0.6rem;
+      //   margin-block: 0.7rem;
+      // }
     }
 
     .Newsletter {
@@ -1904,11 +1831,6 @@ button:nth-child(2):hover {
         height: auto;
       }
     }
-  }
-
-  button.SubscribeBtn {
-    margin-right: -3.5rem;
-    margin-top: 1.16rem;
   }
 
   .ContactAddress {
@@ -1971,15 +1893,11 @@ button:nth-child(2):hover {
 }
 
 @media screen and (min-width: 1510px) {
-  button.SubscribeBtn {
-    right: 14.5%;
-  }
-  input.EmailField {
-    width: 100%;
-  }
-  button.SubscribeBtn {
-    // border: 2px solid red;
-    margin-left: 0.2rem;
+  .EmailSection {
+    input {
+      width: 100%;
+      border: 1px solid black;
+    }
   }
 }
 
