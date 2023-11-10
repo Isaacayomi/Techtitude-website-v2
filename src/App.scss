@@ -752,21 +752,73 @@ button:nth-child(2):hover {
 }
 //Removes the nav list on screen widths of 650px below
 @media screen and (max-width: 650px) {
-  .ContainerNav {
-    .NavItems {
-      display: none;
-    }
+  //togglememu
+  .NavItems {
+    display: none;
   }
+
+  .NavItems.open {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 100vh;
+    background-color: $purplebg;
+    display: block;
+    width: 100%;
+    text-align: right;
+    // padding-inline: 0;
+  }
+
+  .NavIcon {
+    margin-right: 10px;
+  }
+
+  .NavIcon button {
+    background-color: transparent;
+    border: none;
+  }
+  // .ContainerNav {
+  //   .NavItems {
+  //     display: none;
+  //   }
+  // }
 }
 //End
 
 @media screen and (min-width: 651px) and (max-width: 760px) {
   .ContainerNav {
     padding-inline: $inline-padding;
+    position: relative;
     //Removes the nav list on screen widths of 651px below
+    //toggle nav bar
     .NavItems {
       display: none;
     }
+
+    .NavItems.open {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      height: 100vh;
+      background-color: $purplebg;
+      display: block;
+      border: 2px solid red;
+      width: 100%;
+      text-align: right;
+      // padding-inline: 0;
+    }
+
+    .NavIcon {
+      margin-right: 10px;
+    }
+
+    .NavIcon button {
+      background-color: transparent;
+      border: none;
+    }
+    // .NavItems {
+    //   display: none;
+    // }
   }
   .Hero {
     padding-inline: $inline-padding;
