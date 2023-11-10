@@ -1,7 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import { CV_ICON, ELLIPSE, INTERNSHIP_ICON, MENTORSHIP_ICON, PROJECT_ICON } from '../assets/images/img';
+import ELLIPSE from '/images/ellipse.png';
+import CV_ICON from '/images/cv-icon.png';
+import INTERNSHIP_ICON from '/images/internship-icon.png';
+import MENTORSHIP_ICON from '/images/mentorship-icon.png';
+import PROJECT_ICON from '/images/project-icon.png';
 
 const CardCarousels = () => {
     return (

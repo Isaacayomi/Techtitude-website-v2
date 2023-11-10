@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { INSTRUCTOR_IMG } from '../assets/images/img'
+// import { INSTRUCTOR_IMG } from '../assets/images/img'
 
 const InstructorsSection = () => {
     return (

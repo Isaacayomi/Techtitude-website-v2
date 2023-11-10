@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { STARS_ICONS } from '../assets/images/img'
+
+import STARS_ICONS from '/images/star-image.png'
+
+// import { STARS_ICONS } from '../assets/images/img'
 
 const TestimonialsCarousels = () => {
     return (

@@ -7,7 +7,7 @@ import CoursesSection from './Components/Courses'
 import InstructorsSection from './Components/InstructorsSection'
 import Footer from './Components/Footer'
 //Updated
-import HeroImage from './assets/images/hero-img.png'
+import HeroImage from '/images/hero-img.png'
 //...
 // import { HERO_IMAGE } from './assets/images/img';
 
@@ -34,13 +34,13 @@ export default function App() {
   return (
     <div className="NaHam">
       {/*Navbar Pending*/}
-      {Navbar()}
-      {HeroSection()}
-      {CardCarousels()}
-      {TestimonialsCarousels()}
-      {CoursesSection()}
-      {InstructorsSection()}
-      {Footer()}
+      <Navbar />
+      <HeroSection />
+      <CardCarousels />
+      <TestimonialsCarousels />
+      <CoursesSection />
+      <InstructorsSection />
+      <Footer />
     </div>
   )
 }

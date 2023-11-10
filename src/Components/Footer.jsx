@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { FOOTER_LOGO, SOCIALS_ICON } from '../assets/images/img';
+import FOOTER_LOGO from '/images/footer-logo.png'
+import SOCIALS_ICON from '/images/social-imgs.png'
+
+
+// import { FOOTER_LOGO, SOCIALS_ICON } from '../assets/images/img';
 
 const Footer = () => {
     return (

@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { NAV_ICON, TECHTITUDE_LOGO } from '../assets/images/img';
-import { Form, Link } from 'react-router-dom';
+
+import NAV_ICON from '/images/nav-icon.png'
+import TECHTITUDE_LOGO from '/images/techtitude-logo.png'
+// import { NAV_ICON, TECHTITUDE_LOGO } from '../assets/images/img';
 
 
 const Navbar = () => {
