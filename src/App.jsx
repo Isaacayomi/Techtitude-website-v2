@@ -22,8 +22,7 @@ const HeroSection = () => {
 
       <div className='HeroImg'>
 
-        <img src={HERO_IMAGE} alt='hero-img' className='HiddenImg' />        {/* <img src={HERO_IMG} alt='hero-img' className='HiddenImage' /> */}
-        {/* <img src={HER0_IMG} alt='hero-img' className='HiddenImg' /> */}
+        <img src={HERO_IMAGE} alt='hero-img' className='HiddenImg' />
       </div>
     </div>
   )
